@@ -43,6 +43,8 @@ int main() {
         }
     }
 
+    std::cout << "Your score is: " << score << "/" << size << std::endl;
+
     return 0;
 }
 
