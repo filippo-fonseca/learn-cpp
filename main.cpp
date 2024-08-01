@@ -1,7 +1,20 @@
 #include <iostream>
-using namespace std;
 
-int main() { 
-cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
-return 0;
+
+int main() {
+
+    std::string name;
+    int age;
+
+    std::cout << "Enter your name: ";
+    std::cin >> name;
+
+    std::cout << "What's your age? ";
+    std::cin >> age;
+
+    
+
+    std::cout << "Hello " << name << "!" << std::endl;
+    std::cout << "You are " << age << " years old." << std::endl;
+    return 0;
 }
