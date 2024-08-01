@@ -1,16 +1,33 @@
 #include <iostream>
 #include <cmath>
 
+double promptUserForNumber(std::string prompt) {
+    double number;
+    std::cout << prompt;
+    std::cin >> number;
+
+    if (number < 0) {
+        std::cout << "Please enter positive numbers." << std::endl;
+        promptUserForNumber(prompt + " (positive numbers only): ");
+    }
+    return number;
+}
+
 
 int main() {
-    double x= 3;
-    double y = 4;
-    double z;
+   double a;
+   double b;
+   double c;
 
-    z = pow(x, y);
-    z = sqrt(y);
+   a = promptUserForNumber("Enter a: ");
+   b = promptUserForNumber("Enter b: ");
 
-    std::cout << z;
+   a = pow(a, 2);
+   b = pow(b, 2);
+   c = sqrt(a + b);
+
+    std::cout << "The hypotenuse is: " << c << std::endl;
+
 
     return 0;
 }
