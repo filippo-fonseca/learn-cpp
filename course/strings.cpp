@@ -1,6 +1,5 @@
 #include <iostream>
 
-
 int main() {
     std::string name;
 
@@ -13,6 +12,5 @@ int main() {
         std::cout << "Hello " << name << "!" << std::endl;
     }
 
-
-   return 0;
+    return 0;
 }
